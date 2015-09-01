@@ -1,3 +1,8 @@
+/* 
+ * Code without implementation of GoToCellDialog class's
+ * custom implementation
+ /
+
 #include<QApplication>
 #include<QDialog>
 
@@ -16,3 +21,21 @@ int main(int argc,char *argv[])
 
 }
 
+*/
+
+/* 
+ * Code with implementation of GoToCellDialog class's
+ * custom implementation
+ */
+
+#include<QApplication>
+
+#include "gotocelldialog.h"
+
+int main(int argc, char* argv[])
+{
+	QApplication app(argc,argv);
+	GoToCellDialog *dialog = new GoToCellDialog();
+	dialog->show();
+	return app.exec();
+}

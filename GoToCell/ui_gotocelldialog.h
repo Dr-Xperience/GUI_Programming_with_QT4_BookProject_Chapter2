@@ -33,8 +33,8 @@ public:
     QLineEdit *lineEdit;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButtonCancel;
     QPushButton *pushButtonOK;
+    QPushButton *pushButtonCancel;
 
     void setupUi(QWidget *GoToCellDialog)
     {
@@ -64,16 +64,16 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer);
 
-        pushButtonCancel = new QPushButton(GoToCellDialog);
-        pushButtonCancel->setObjectName(QStringLiteral("pushButtonCancel"));
-
-        horizontalLayout_2->addWidget(pushButtonCancel);
-
         pushButtonOK = new QPushButton(GoToCellDialog);
         pushButtonOK->setObjectName(QStringLiteral("pushButtonOK"));
         pushButtonOK->setEnabled(false);
 
         horizontalLayout_2->addWidget(pushButtonOK);
+
+        pushButtonCancel = new QPushButton(GoToCellDialog);
+        pushButtonCancel->setObjectName(QStringLiteral("pushButtonCancel"));
+
+        horizontalLayout_2->addWidget(pushButtonCancel);
 
 
         verticalLayout->addLayout(horizontalLayout_2);
@@ -94,8 +94,8 @@ public:
     {
         GoToCellDialog->setWindowTitle(QApplication::translate("GoToCellDialog", "Go to Cell", 0));
         label->setText(QApplication::translate("GoToCellDialog", "&CellLocation:", 0));
-        pushButtonCancel->setText(QApplication::translate("GoToCellDialog", "Cancel", 0));
         pushButtonOK->setText(QApplication::translate("GoToCellDialog", "OK", 0));
+        pushButtonCancel->setText(QApplication::translate("GoToCellDialog", "Cancel", 0));
     } // retranslateUi
 
 };
