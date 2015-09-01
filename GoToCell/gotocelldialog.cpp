@@ -13,7 +13,8 @@ GoToCellDialog::GoToCellDialog(QWidget *parent):QDialog(parent)
 	
 	connect(buttonBox,SIGNAL(accepted()),this,SLOT(accept()));
 	connect(buttonBox,SIGNAL(rejected()),this,SLOT(reject()));
-
+	//No need to set fixed height done that in QtDesigner
+	//GoToCellDialog->setFixedHeight(sizeHint().height());
 }
 
 void GoToCellDialog::on_lineEdit_textChanged()

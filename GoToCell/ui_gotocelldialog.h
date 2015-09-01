@@ -40,6 +40,12 @@ public:
         if (GoToCellDialog->objectName().isEmpty())
             GoToCellDialog->setObjectName(QStringLiteral("GoToCellDialog"));
         GoToCellDialog->resize(222, 71);
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(1);
+        sizePolicy.setVerticalStretch(1);
+        sizePolicy.setHeightForWidth(GoToCellDialog->sizePolicy().hasHeightForWidth());
+        GoToCellDialog->setSizePolicy(sizePolicy);
+        GoToCellDialog->setMaximumSize(QSize(222, 71));
         verticalLayout = new QVBoxLayout(GoToCellDialog);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
