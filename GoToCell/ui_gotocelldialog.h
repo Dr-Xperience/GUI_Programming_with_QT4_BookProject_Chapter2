@@ -13,11 +13,11 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -33,8 +33,7 @@ public:
     QLineEdit *lineEdit;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButtonOK;
-    QPushButton *pushButtonCancel;
+    QDialogButtonBox *buttonBox;
 
     void setupUi(QWidget *GoToCellDialog)
     {
@@ -64,16 +63,11 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer);
 
-        pushButtonOK = new QPushButton(GoToCellDialog);
-        pushButtonOK->setObjectName(QStringLiteral("pushButtonOK"));
-        pushButtonOK->setEnabled(false);
+        buttonBox = new QDialogButtonBox(GoToCellDialog);
+        buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
-        horizontalLayout_2->addWidget(pushButtonOK);
-
-        pushButtonCancel = new QPushButton(GoToCellDialog);
-        pushButtonCancel->setObjectName(QStringLiteral("pushButtonCancel"));
-
-        horizontalLayout_2->addWidget(pushButtonCancel);
+        horizontalLayout_2->addWidget(buttonBox);
 
 
         verticalLayout->addLayout(horizontalLayout_2);
@@ -84,9 +78,6 @@ public:
 
         retranslateUi(GoToCellDialog);
 
-        pushButtonOK->setDefault(true);
-
-
         QMetaObject::connectSlotsByName(GoToCellDialog);
     } // setupUi
 
@@ -94,8 +85,6 @@ public:
     {
         GoToCellDialog->setWindowTitle(QApplication::translate("GoToCellDialog", "Go to Cell", 0));
         label->setText(QApplication::translate("GoToCellDialog", "&CellLocation:", 0));
-        pushButtonOK->setText(QApplication::translate("GoToCellDialog", "OK", 0));
-        pushButtonCancel->setText(QApplication::translate("GoToCellDialog", "Cancel", 0));
     } // retranslateUi
 
 };

@@ -227,6 +227,8 @@ release/moc_gotocelldialog.cpp: ../../../include/QtWidgets/QDialog \
 		../../../include/QtGui/qinputmethod.h \
 		../../../include/QtWidgets/QButtonGroup \
 		../../../include/QtWidgets/qbuttongroup.h \
+		../../../include/QtWidgets/QDialogButtonBox \
+		../../../include/QtWidgets/qdialogbuttonbox.h \
 		../../../include/QtWidgets/QHBoxLayout \
 		../../../include/QtWidgets/qboxlayout.h \
 		../../../include/QtWidgets/qlayout.h \
@@ -258,9 +260,6 @@ release/moc_gotocelldialog.cpp: ../../../include/QtWidgets/QDialog \
 		../../../include/QtGui/qtextformat.h \
 		../../../include/QtGui/qpen.h \
 		../../../include/QtGui/qtextoption.h \
-		../../../include/QtWidgets/QPushButton \
-		../../../include/QtWidgets/qpushbutton.h \
-		../../../include/QtWidgets/qabstractbutton.h \
 		../../../include/QtWidgets/QSpacerItem \
 		../../../include/QtWidgets/QVBoxLayout \
 		../../../include/QtWidgets/QWidget \
@@ -748,11 +747,11 @@ release/gotocelldialog.o: gotocelldialog.cpp ../../../include/QtGui/QtGui \
 		../../../include/QtWidgets/QAction \
 		../../../include/QtWidgets/QApplication \
 		../../../include/QtWidgets/QButtonGroup \
+		../../../include/QtWidgets/QDialogButtonBox \
 		../../../include/QtWidgets/QHBoxLayout \
 		../../../include/QtWidgets/QHeaderView \
 		../../../include/QtWidgets/QLabel \
 		../../../include/QtWidgets/QLineEdit \
-		../../../include/QtWidgets/QPushButton \
 		../../../include/QtWidgets/QSpacerItem \
 		../../../include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\gotocelldialog.o gotocelldialog.cpp
@@ -876,6 +875,8 @@ release/main.o: main.cpp ../../../include/QtWidgets/QApplication \
 		../../../include/QtWidgets/qactiongroup.h \
 		../../../include/QtWidgets/QButtonGroup \
 		../../../include/QtWidgets/qbuttongroup.h \
+		../../../include/QtWidgets/QDialogButtonBox \
+		../../../include/QtWidgets/qdialogbuttonbox.h \
 		../../../include/QtWidgets/QHBoxLayout \
 		../../../include/QtWidgets/qboxlayout.h \
 		../../../include/QtWidgets/qlayout.h \
@@ -907,9 +908,6 @@ release/main.o: main.cpp ../../../include/QtWidgets/QApplication \
 		../../../include/QtGui/qtextformat.h \
 		../../../include/QtGui/qpen.h \
 		../../../include/QtGui/qtextoption.h \
-		../../../include/QtWidgets/QPushButton \
-		../../../include/QtWidgets/qpushbutton.h \
-		../../../include/QtWidgets/qabstractbutton.h \
 		../../../include/QtWidgets/QSpacerItem \
 		../../../include/QtWidgets/QVBoxLayout \
 		../../../include/QtWidgets/QWidget
