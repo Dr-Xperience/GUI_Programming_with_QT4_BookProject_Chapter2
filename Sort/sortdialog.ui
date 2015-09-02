@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>313</width>
-    <height>372</height>
+    <height>283</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,6 +31,12 @@
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QComboBox" name="comboBoxPrimaryColumn">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="insertPolicy">
+           <enum>QComboBox::NoInsert</enum>
+          </property>
           <item>
            <property name="text">
             <string>None</string>
@@ -135,7 +141,7 @@
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>46</height>
+       <height>0</height>
       </size>
      </property>
     </spacer>
@@ -157,6 +163,12 @@
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="QComboBox" name="comboBoxSecondaryColumn">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="insertPolicy">
+           <enum>QComboBox::NoInsert</enum>
+          </property>
           <item>
            <property name="text">
             <string>None</string>
@@ -220,6 +232,12 @@
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
          <widget class="QComboBox" name="comboBoxTertiaryColumn">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="insertPolicy">
+           <enum>QComboBox::NoInsert</enum>
+          </property>
           <item>
            <property name="text">
             <string>None</string>
