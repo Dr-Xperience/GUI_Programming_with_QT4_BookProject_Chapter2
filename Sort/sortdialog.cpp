@@ -15,6 +15,9 @@ SortDialog::SortDialog(QWidget *parent):QDialog(parent)
 
 	setColumnRange('A','Z');
 	//comboBoxPrimaryColumn->setCompleter(mCompleter);
+	comboBoxPrimaryColumn->completer()->setCompletionMode(QCompleter::PopupCompletion);
+	comboBoxSecondaryColumn->completer()->setCompletionMode(QCompleter::PopupCompletion);
+	comboBoxTertiaryColumn->completer()->setCompletionMode(QCompleter::PopupCompletion);
 }
 
 void SortDialog::setColumnRange(QChar first, QChar last)
